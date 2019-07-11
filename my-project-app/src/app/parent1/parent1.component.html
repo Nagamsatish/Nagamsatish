@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-12">
+      <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>EmpName</th>
+              <th>EmpId</th>
+              <th>EmpSalary</th>
+              <th>EmpCity</th>
+              <th>EmpPinCode</th>
+              <th>Emp salar update</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let employee of myParentData">
+                  <td>{{employee.empName}}</td>
+                  <td>{{employee.empId}}</td>
+                  <td>{{employee.empSalary}}</td>
+                  <td>{{employee.empCity}}</td>
+                  <td>{{employee.empPinCode}}</td>
+                  <td><app-child1 [myEmpId]="employee.empId"></app-child1></td>
+              </tr>
+          </tbody>
+      
+      </table>
+  </div>

@@ -1,0 +1,58 @@
+<form action="" [formGroup] = "registerForm" (ngSubmit) ="regMethod()">
+  <div class="form-group" [ngClass]="{'has-error' : (registerForm.get('userName').touched || registerForm.get('userName').dirty) 
+  && registerForm.get('userName').errors}">
+    <label for="" class="control-label">User Name</label>
+    <input type="text" formControlName="userName" placeholder="User Name" class="form-control">
+    
+    <div class="myError" *ngIf="(registerForm.get('userName').touched || registerForm.get('userName').dirty) 
+      && registerForm.get('userName').errors">
+      <div *ngIf="registerForm.get('userName').hasError('required')"> 
+      username is required
+      </div>
+      <div *ngIf="registerForm.get('userName').hasError('minlength')">
+      username minim5 charcters 
+      </div>
+    </div> 
+
+  </div>
+
+  <div class="form-group ">
+      <label for="">E-mail</label>
+      <input type="text" formControlName="email" placeholder="E-mail" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">password</label>
+        <input type="text" formControlName="password" placeholder="password" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">mobile</label>
+      <input type="number" name="mobile" placeholder="mobile" class="form-control" formControlName="mobile">
+    </div>
+    <div class="form-group">
+        <label for="">gender</label><br>
+       <input type="radio" name="gender" value="male"> MALE<br>
+       <input type="radio" name="gender" value="female"> FEMALE
+      </div>
+      <div class="form-group">
+          <label for="">Bikes</label><br>
+         <input type="checkbox"  value="honda"> HONDA
+         <input type="checkbox"  value="yamaha"> YAMAHA
+         <input type="checkbox"  value="suzuki"> SUZUKI
+        </div>
+      <div class="form-group">
+        <label for="">products</label>
+        <select class="form-control" formControlName="products">
+          <option  *ngFor="let select of selector">
+              {{select.countryName}}
+          </option>
+           
+            
+          </select>
+      </div>  
+      <div class="form-group">
+        <label for="">address</label>
+        <textarea rows="5" column="50" class="form-control" formControlName="address"></textarea>
+      </div>
+    <button type="submit" class="btn btn-primary">submit</button>
+  
+</form>

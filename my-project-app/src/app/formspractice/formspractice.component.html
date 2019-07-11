@@ -1,0 +1,37 @@
+<div class="form-group">
+  <label for="" [formGroup]= "formExample" (ngSubmit)= "formMethod">username</label>
+  <input type="text" name="username" placeholder="username" class="form-control">
+</div>
+<div class="form-group">
+  <label for="">E-mail</label>
+  <input type="text" formControlName="email" placeholder="E-mail" class="form-control">
+</div>
+<div class="form-group">
+  <label for="">Password</label>
+  <input type="text" formControlName="Password" placeholder="Password" class="form-control">
+</div>
+<div class="form-group">
+  <label for="">Mobile</label>
+  <input type="text" formControlName="Mobile" placeholder="Mobile" class="form-control">
+</div>
+<div class="form-group">
+  <label for="">Gender</label><br>
+  <input type="radio" formControlName="Gender" value="male">Male<br>
+  <input type="radio" formControlName="Gender" value="female">Female
+</div>
+<div class="form-group">
+  <label for="">Bikes</label><br>
+  <input type="checkbox"  value="harly">harly
+  <input type="checkbox"  value="david">david
+  <input type="checkbox"  value="son">son
+</div>
+<div class="form-group">
+  <label for="">Brands</label>
+  <select class="form-control"><option></option><option></option></select>
+</div>
+<div class="form-group">
+  <label for="">address</label>
+  <textarea rows="5" column="50" class="form-control" formControlName="address"></textarea>
+</div>
+<button type="submit" class="btn btn-primary">submit</button>
+

@@ -1,0 +1,24 @@
+<div>{{register}}</div>
+<!-- <ul *ngFor = "let user of users">
+  <li>{{user.empName}}</li>
+</ul> -->
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>empId</th>
+      <th>empName</th>
+      <th>salary</th>
+      <th>city</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let user of users">
+          <td>{{user.empId}}</td>
+          <td>{{user.empName}}</td>
+          <td>{{user.salary}}</td>
+          <td>{{user.city}}</td>
+    </tr>
+  </tbody>
+</table>
+

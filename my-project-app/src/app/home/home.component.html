@@ -1,0 +1,25 @@
+{{home}}
+<table class="table">
+        <thead>
+          <tr>
+            <th>studentId</th>
+            <th>studentName</th>
+            <th>salary</th>
+            <th>city</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of studentData">
+                <td>{{student.studentId}}</td>
+                <td>{{student.studentName}}</td>
+                <td>{{student.salary}}</td>
+                <td>{{student.city}}</td>
+          </tr>
+        </tbody>
+        
+      </table>
+
+      <a [routerLink]="['products']">My Products</a>
+      <router-outlet></router-outlet>
+      
+     

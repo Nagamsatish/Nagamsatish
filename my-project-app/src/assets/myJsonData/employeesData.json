@@ -1,0 +1,83 @@
+[
+    {
+      "empId" : 101,
+      "empName" : "shankar",
+      "empDateOfBirth" :"24-june-1993",
+      "empDesignation" : "Developer",
+      "empCity" : "Banglore",
+      "empSalary" : 54000,
+      "empHavingCar" : true
+    },
+    {
+      "empId" : 102,
+      "empName" : "Ram",
+      "empDateOfBirth" :"19-March-1994",
+      "empDesignation" : "Designer",
+      "empCity" : "Hyderabad",
+      "empSalary" : 22000,
+      "empHavingCar" : false
+    },
+    {
+      "empId" : 103,
+      "empName" : "Imran",
+      "empDateOfBirth" :"13-june-1992",
+      "empDesignation" : "ApiDeveloper",
+      "empCity" : "Kammam",
+      "empSalary" : 65000,
+      "empHavingCar" : true
+    },
+    {
+      "empId" : 105,
+      "empName" : "Naresh",
+      "empDateOfBirth" :"25-April-1992",
+      "empDesignation" : "WebDeveloper",
+      "empCity" : "Manikonda",
+      "empSalary" : 59000,
+      "empHavingCar" : true
+    },
+    {
+      "empId" : 106,
+      "empName" : "Sathish",
+      "empDateOfBirth" :"14-Feb-1994",
+      "empDesignation" : "EcommerceDeveloper",
+      "empCity" : "Vizag",
+      "empSalary" : 63000,
+      "empHavingCar" : true
+    },
+    {
+      "empId" : 107,
+      "empName" : "Sai",
+      "empDateOfBirth" :"12-jan-1993",
+      "empDesignation" : "SapDeveloper",
+      "empCity" : "Vizag",
+      "empSalary" : 57000,
+      "empHavingCar" : false
+    },
+    {
+      "empId" : 108,
+      "empName" : "Phani",
+      "empDateOfBirth" :"2-Aug-1995",
+      "empDesignation" : "UIDeveloper",
+      "empCity" : "Vijayawada",
+      "empSalary" : 36000,
+      "empHavingCar" : true
+    },
+    {
+      "empId" : 109,
+      "empName" : "chandu",
+      "empDateOfBirth" :"14-Dec-1994",
+      "empDesignation" : "WebDeveloper",
+      "empCity" : "Vizag",
+      "empSalary" : 38000,
+      "empHavingCar" : true
+    },
+    {
+      "empId" : 110,
+      "empName" : "Naveena",
+      "empDateOfBirth" :"14-July-1994",
+      "empDesignation" : "UIDeveloper",
+      "empCity" : "Thenali",
+      "empSalary" : 65000,
+      "empHavingCar" : true
+    }
+  ]

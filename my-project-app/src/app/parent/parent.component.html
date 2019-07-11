@@ -1,0 +1,67 @@
+<!-- {{userName}} -->
+<!-- <app-child [parentData]="userName"></app-child> -->
+<!-- <app-child [parentData]="data"></app-child> -->
+<div class="row">
+    <div class="col-md-4">
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>studentName</th>
+                <th>studentId</th>
+                <th>studentNo</th>
+                <th>havingCar</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of myData">
+                    <td>{{student.name}}</td>
+                    <td>{{student.id}}</td>
+                    <td>{{student.no}}</td>
+                    <td>{{student.havingCar}}</td>
+                </tr>
+            </tbody>
+        
+        </table>
+    </div>
+    <!-- <div class="col-md-4">
+        <table>
+            <thead>
+              <tr>
+                <th>studentName</th>
+                <th>studentId</th>
+                <th>studentNo</th>
+                <th>havingCar</th>
+              </tr>
+            </thead>
+        <tr *ngFor="let student of myData">
+            <td>{{student.name}}</td>
+            <td>{{student.id}}</td>
+            <td>{{student.no}}</td>
+            <td>{{student.havingCar}}</td>
+        </tr>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <table>
+            <thead>
+              <tr>
+                <th>studentName</th>
+                <th>studentId</th>
+                <th>studentNo</th>
+                <th>havingCar</th>
+              </tr>
+            </thead>
+        <tr *ngFor="let student of myData">
+            <td>{{student.name}}</td>
+            <td>{{student.id}}</td>
+            <td>{{student.no}}</td>
+            <td>{{student.havingCar}}</td>
+        </tr>
+        </table>
+    </div> -->
+
+</div>
+
+
+
+<app-child (myButton)="parentData($event)"></app-child>

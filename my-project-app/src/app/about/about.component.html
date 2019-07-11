@@ -1,0 +1,39 @@
+{{employees | json}}
+
+<table class="table">
+        <thead>
+          <tr>
+            <th>empId</th>
+            <th>empName</th>
+            <th>empDesignation</th>
+            <th>empCity</th>
+            <th>empSalary</th>
+            <th>Date Of Birth</th>
+            <th>city</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.empId}}</td>
+                <td>{{employee.empName}}</td>
+                <td>{{employee.empDesignation}}</td>
+                <td>{{employee.empCity}}</td>
+                <td>{{employee.empSalary}}</td>
+                <td>{{employee.empDateOfBirth}}</td>
+                <td>{{employee.empHavingCar}}</td>
+          </tr>
+        </tbody>
+      </table> 
+
+<!-- 
+      <div class="row" >
+          <div class="col-md-4" *ngFor="let employee of employees">
+              <div class="panel panel-default">
+                  <div class="panel-body text-center">
+                        <h2>{{employee.empName}}</h2>
+                        <h2>{{employee.empDesignation}}</h2>
+                        <h6>{{employee.empId}}</h6>
+                  </div>
+              </div>
+            </div>
+      </div> -->
